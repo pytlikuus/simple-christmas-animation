@@ -1,0 +1,58 @@
+body {
+    background: #333;
+    /* height: 100vh */
+}
+
+.part1,
+.part2 {
+    position: absolute;
+    width: 98%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.part1 {
+    top: 0;
+    left: 1%;
+
+    background-image: url('img/bg1.jpg');
+}
+
+.part2 {
+    top: 50%;
+    left: 1%;
+    background-image: url('img/bg2.jpg');
+    background-position: bottom;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background: #333; */
+    color: #333;
+}
+
+.text h1 {
+    font-family: 'ZCOOL XiaoWei', serif;
+    font-size: 7rem;
+    background: url('img/redblack2.jpg');
+    text-align: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: animation 60s infinite linear;
+}
+
+@keyframes animation {
+    0% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
